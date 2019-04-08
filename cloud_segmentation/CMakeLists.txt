@@ -46,7 +46,7 @@ target_link_libraries(cloud_segmentation
         ${CUDA_LIBRARIES}
         ${CUDA_CUBLAS_LIBRARIES}
         ${CUDA_curand_LIBRARY}
-        #/usr/local/cuda/lib64
+        /usr/local/cuda/lib64
         )
 
 #message(STATUS $PCL_LIBRARIES)
