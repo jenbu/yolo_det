@@ -36,6 +36,7 @@ include_directories(
         ${OpenCV_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
         ${CUDA_INCLUDE_DIR}
+        /usr/local/cuda/lib64
 )
 
 add_executable(cloud_segmentation src/cloud_seg.cpp)
