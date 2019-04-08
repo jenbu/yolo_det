@@ -11,8 +11,8 @@
 #include <chrono>
 
 
-#include <../../darknet_ros_UiA/darknet_ros_msgs/BoundingBox.h>
-#include <../../darknet_ros_UiA/darknet_ros_msgs/BoundingBoxes.h>
+#include <../../../darknet_ros_UiA/darknet_ros_msgs/BoundingBox.h>
+#include <../../../darknet_ros_UiA/darknet_ros_msgs/BoundingBoxes.h>
 
 #include <ros/ros.h>
 #include <ros/spinner.h>
