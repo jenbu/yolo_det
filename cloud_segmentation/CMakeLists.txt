@@ -35,7 +35,7 @@ include_directories(
         ${catkin_INCLUDE_DIRS}
         ${OpenCV_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
-        #${HDF5_INCLUDE_DIR}
+        ${CUDA_INCLUDE_DIR}
 )
 
 add_executable(cloud_segmentation src/cloud_seg.cpp)
@@ -46,4 +46,7 @@ target_link_libraries(cloud_segmentation
         ${CUDA_LIBRARIES}
         ${CUDA_CUBLAS_LIBRARIES}
         ${CUDA_curand_LIBRARY}
+        #/usr/local/cuda/lib64
         )
+
+#message(STATUS $PCL_LIBRARIES)
