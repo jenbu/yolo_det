@@ -19,9 +19,8 @@ find_package(catkin REQUIRED COMPONENTS
         )
 find_package(OpenCV REQUIRED)
 find_package(PCL REQUIRED)
-find_package(HDF5 REQUIRED)
-find_package(FLANN REQUIRED)
-find_package(PCL REQUIRED)
+#find_package(HDF5 REQUIRED)
+#find_package(FLANN REQUIRED)
 
 catkin_package(
 #  INCLUDE_DIRS include
@@ -35,7 +34,7 @@ include_directories(
         ${catkin_INCLUDE_DIRS}
         ${OpenCV_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
-        ${HDF5_INCLUDE_DIR}
+        #${HDF5_INCLUDE_DIR}
 )
 
 add_executable(cloud_segmentation src/cloud_seg.cpp)
