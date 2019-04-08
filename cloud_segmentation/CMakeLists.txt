@@ -16,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
         roscpp rostime std_msgs sensor_msgs message_filters
         cv_bridge image_transport compressed_image_transport
         compressed_depth_image_transport kinect2_bridge
+        darknet_ros_eb
         )
 find_package(OpenCV REQUIRED)
 find_package(PCL REQUIRED)
