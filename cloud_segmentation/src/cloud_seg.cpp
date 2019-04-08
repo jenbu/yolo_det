@@ -10,24 +10,18 @@
 #include <thread>
 #include <chrono>
 
-
-
 #include <darknet_ros_msgs/BoundingBox.h>
 #include <darknet_ros_msgs/BoundingBoxes.h>
 
 #include <ros/ros.h>
 #include <ros/spinner.h>
 
-
-
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
-#include <pcl/io/pcd_io.h>
-#include <pcl/io/ply_io.h>
 #include <pcl/visualization/cloud_viewer.h>
-#include <pcl/filters/statistical_outlier_removal.h>
+
 #include <pcl/filters/voxel_grid.h>
-#include <pcl/filters/extract_indices.h>
+
 
 
 #include <message_filters/sync_policies/approximate_time.h>
@@ -62,8 +56,6 @@ private:
 
     pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, box_cloud, pin_cloud;
     pcl::PointCloud<pcl::PointNormal>::Ptr cloud_normal, aligned_boxEnd, filtered_cloud, segmented;
-    pcl::PCDWriter writer;
-    pcl::PLYReader reader;
     std::ostringstream oss;
 
     int QHD_WIDTH = 960;

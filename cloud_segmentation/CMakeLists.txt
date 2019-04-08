@@ -43,4 +43,5 @@ target_link_libraries(cloud_segmentation
         ${catkin_LIBRARIES}
         ${OpenCV_LIBRARIES}
         ${PCL_LIBRARIES}
+        ${CUDA_LIBRARIES}
         )
