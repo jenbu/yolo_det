@@ -86,7 +86,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a396bbb6-b722-41fa-b43b-380b2b8e55af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" beforeDir="false" afterPath="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -124,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -796,12 +795,12 @@
       <workItem from="1554731896977" duration="216000" />
       <workItem from="1554732113514" duration="711000" />
       <workItem from="1554733122356" duration="6800000" />
-      <workItem from="1554798888204" duration="3775000" />
+      <workItem from="1554798888204" duration="4115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11717000" />
+    <option name="totallyTimeSpent" value="12057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -945,7 +944,7 @@
     <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
