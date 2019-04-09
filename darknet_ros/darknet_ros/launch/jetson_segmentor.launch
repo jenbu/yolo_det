@@ -14,7 +14,7 @@
 	<arg name="network_param_file"         default="$(find darknet_ros_eb)/config/yolov3-tiny-2c.yaml"/>
 	<rosparam command="load" ns="darknet_ros" file="$(arg network_param_file)"/>
 
-	<node pkg="darknet_ros_eb" type="darknet_ros_eb" name="abc" output="screen" launch-prefix="$(arg launch_prefix)">
+	<node pkg="darknet_ros_eb" type="darknet_ros_eb" name="abc" output="screen" launch-prefix="$(arg launch_prefix)" machine="$(arg machine_name)">
 		<param name="weights_path"          value="$(arg yolo_weights_path)" />
 		<param name="config_path"           value="$(arg yolo_config_path)" />
 		<param name="image_input" 			value="$(arg image_input)"/>
