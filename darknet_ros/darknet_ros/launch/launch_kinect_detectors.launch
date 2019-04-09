@@ -18,10 +18,10 @@
 
     <!-- Jetson 2 -->
     <include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
-        <arg name="image_input"  value="/jetson2/qhd/image_color"/>
-        <arg name="bb_pub"  value="/jetson2/eb/bounding_box"/>
-        <arg name="detectedImage_pub"  value="/jetson2/eb/detected_image"/>
-        <arg name="machine_name"  value="jetson2"/>
+        <arg name="image_input"  value="/jetson3/qhd/image_color"/>
+        <arg name="bb_pub"  value="/jetson3/eb/bounding_box"/>
+        <arg name="detectedImage_pub"  value="/jetson3/eb/detected_image"/>
+        <arg name="machine_name"  value="jetson3"/>
 
     </include>
 
