@@ -14,7 +14,6 @@
         <arg name="image_input"  value="/jetson1/qhd/image_color"/>
         <arg name="bb_pub"  value="/jetson1/eb/bounding_box"/>
         <arg name="detectedImage_pub"  value="/jetson1/eb/detected_image"/>
-
         <arg name="machine_name"  value="jetson1"/>
 
     </include>

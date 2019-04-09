@@ -4,6 +4,7 @@
 	<arg name="image_input" />
 	<arg name="bb_pub" />
 	<arg name="detectedImage_pub" />
+	<arg name="machine_name" />
 
 	<arg name="launch_prefix" default=""/>
 
