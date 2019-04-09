@@ -86,7 +86,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a396bbb6-b722-41fa-b43b-380b2b8e55af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" beforeDir="false" afterPath="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="59" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="150">
+              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -163,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+            <state relative-caret-position="94">
+              <caret line="156" column="50" selection-start-line="156" selection-start-column="50" selection-end-line="156" selection-end-column="50" />
               <folding>
                 <element signature="e#341#408#0" expanded="true" />
                 <element signature="e#7337#8167#0" />
@@ -216,8 +217,8 @@
         <option value="$PROJECT_DIR$/cloud_segmentation/src/cloud_seg.cpp" />
         <option value="$PROJECT_DIR$/cloud_segmentation/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/local_segmentor.launch" />
-        <option value="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" />
         <option value="$PROJECT_DIR$/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp" />
+        <option value="$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch" />
       </list>
     </option>
   </component>
@@ -795,15 +796,15 @@
       <workItem from="1554731896977" duration="216000" />
       <workItem from="1554732113514" duration="711000" />
       <workItem from="1554733122356" duration="6800000" />
-      <workItem from="1554798888204" duration="3182000" />
+      <workItem from="1554798888204" duration="3775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11124000" />
+    <option name="totallyTimeSpent" value="11717000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2642344" />
@@ -920,17 +921,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+        <state relative-caret-position="94">
+          <caret line="156" column="50" selection-start-line="156" selection-start-column="50" selection-end-line="156" selection-end-column="50" />
           <folding>
             <element signature="e#341#408#0" expanded="true" />
             <element signature="e#7337#8167#0" />
@@ -945,6 +939,13 @@
             <element signature="e#13817#14315#0" />
             <element signature="e#15043#15760#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/darknet_ros/darknet_ros/launch/jetson1_segmentor.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
         </state>
       </provider>
     </entry>
