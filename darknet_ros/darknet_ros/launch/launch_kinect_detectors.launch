@@ -1,0 +1,22 @@
+
+
+<launch>
+
+    <machine name="jetson1" address="jetson1.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson3" address="jetson3.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson4" address="jetson4.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson5" address="jetson5.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson6" address="jetson6.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+
+    <!-- Jetson 1 -->
+    <include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
+        <arg name="image_input"  value="/jetson1/qhd/image_color"/>
+        <arg name="bb_pub"  value="/jetson1/eb/bounding_box"/>
+        <arg name="detectedImage_pub"  value="/jetson1/eb/detected_image"/>
+
+        <arg name="machine_name"  value="jetson1"/>
+
+    </include>
+
+</launch>
