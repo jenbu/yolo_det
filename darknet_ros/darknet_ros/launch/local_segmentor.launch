@@ -1,0 +1,20 @@
+<launch>
+
+    <arg name="launch_prefix" default=""/>
+
+    <arg name="yolo_weights_path"          default="$(find darknet_ros_eb)/yolo_network_config/weights"/>
+    <arg name="yolo_config_path"           default="$(find darknet_ros_eb)/yolo_network_config/cfg"/>
+
+    <arg name="network_param_file"         default="$(find darknet_ros_eb)/config/yolov3-tiny.yaml"/>
+    <rosparam command="load" ns="darknet_ros" file="$(arg network_param_file)"/>
+
+
+    <node pkg="darknet_ros_eb" type="darknet_ros_eb" name="darknet_ros" output="screen" launch-prefix="$(arg launch_prefix)">
+    <param name="weights_path"          value="$(arg yolo_weights_path)" />
+    <param name="config_path"           value="$(arg yolo_config_path)" />
+    <param name="image_input"	        value= "/kinect2/qhd/image_color"/>
+    <param name="bb_pub" 		        value="/local/bounding_boxes"/>
+    <param name="detectedImage_pub"     value="/local/detection_image"/>
+    </node>
+
+</launch>

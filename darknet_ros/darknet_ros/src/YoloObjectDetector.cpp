@@ -144,8 +144,8 @@ void YoloObjectDetector::init()
   int detectionImageQueueSize;
   bool detectionImageLatch;
 
-  nodeHandle_.param("subscribers/camera_reading/topic", imageTopic,
-                    std::string("/camera/image_raw"));
+  //nodeHandle_.param("subscribers/camera_reading/topic", imageTopic,
+  //                  std::string("/camera/image_raw"));
   nodeHandle_.param("subscribers/camera_reading/queue_size", cameraQueueSize, 1);
   nodeHandle_.param("publishers/object_detector/topic", objectDetectorTopicName,
                     std::string("found_object"));
