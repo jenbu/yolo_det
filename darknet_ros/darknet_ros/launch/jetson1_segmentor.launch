@@ -16,7 +16,7 @@
 		<param name="detectedImage_pub" 	value="/jetson1/detection_image"/>
 	</node>
 
-	<node pkg="cloud_segmentation" type="cloud_segmentation" name="cloud_segmentation_node" machine="jetson1">
+	<node pkg="cloud_segmentation" type="cloud_segmentation" name="cloud_segmentation_node">
 			<param name="input_topic_color" 	value="/jetson1/detection_image" />
 			<param name="input_bounding_boxes" 	value="/jetson1/bounding_boxes" />
 			<param name="sd_depth_image" 		value="/jetson1/sd/image_depth" />
