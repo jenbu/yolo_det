@@ -2,9 +2,9 @@
 
 <launch>
 
-    <machine name="jetson1" address="localhost" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson1" address="localhost" />
     <machine name="jetson2" address="10.225.120.102" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
-    
+
 
     <!-- Jetson 1 -->
     <include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
