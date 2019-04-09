@@ -196,7 +196,8 @@ void YoloObjectDetector::init()
       boost::bind(&YoloObjectDetector::checkForObjectsActionPreemptCB, this));
   checkForObjectsActionServer_->start();
 
-  std::cout << imageTopic << std::endl;
+  ROS_INFO("%s\n", imageTopic.c_str());
+  //std::cout << imageTopic << std::endl;
 }
 
 void YoloObjectDetector::cameraCallback(const sensor_msgs::ImageConstPtr& msg)
