@@ -31,12 +31,18 @@
 
 
     <!-- Jetson 2 -->
+    <!--
     <node pkg="darknet_ros_eb" type="darknet_ros_eb" name="jetson2_segmentor" output="screen" launch-prefix="$(arg launch_prefix)" machine="jetson2">
         <param name="weights_path"          value="/darknet_ros_eb/darknet_ros/yolo_network_config/weights" />
         <param name="config_path"           value="/darknet_ros_eb/darknet_ros/yolo_network_config/cfg" />
         <param name="image_input" 			value="/jetson2/qhd/image_color"/>
         <param name="bb_pub" 			    value="/jetson2/eb/bounding_box"/>
         <param name="detectedImage_pub" 	value="/jetson2/eb/detected_image"/>
+    </node>
+    -->
+    <node pkg="wp3_compressor" type="wp3_compressor_node" name="jetson1_compressor_testing_eb" machine="jetson2">
+        <param name="sensor_name" value="jetson1" />
+        <param name="resolution" value="0.04" />
     </node>
 
 
