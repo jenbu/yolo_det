@@ -2,28 +2,41 @@
 
 <launch>
 
-    <machine name="jetson1" address="localhost" />
-
+    <machine name="Jenas" address="localhost" />
+    <machine name="jetson1" address="jetson1.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <!--<machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <machine name="jetson3" address="jetson3.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
-    <!--<machine name="jetson2" address="10.225.120.102" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>-->
-
+    <machine name="jetson4" address="jetson4.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson5" address="jetson5.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson6" address="jetson6.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    -->
     <!-- Jetson 1 -->
-    <include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
-        <arg name="image_input"  value="/jetson1/qhd/image_color"/>
-        <arg name="bb_pub"  value="/jetson1/eb/bounding_box"/>
-        <arg name="detectedImage_pub"  value="/jetson1/eb/detected_image"/>
-        <arg name="machine_name"  value="jetson1"/>
 
-    </include>
+    <arg name="launch_prefix" default=""/>
+    <arg name="yolo_weights_path"          default="$darknet_ros_eb/yolo_network_config/weights"/>
+    <arg name="yolo_config_path"           default="$darknet_ros_eb/yolo_network_config/cfg"/>
+
+
+    <!--<arg name="network_param_file"         default="darknet_ros_eb/config/yolov3-tiny-2c.yaml"/>
+    <rosparam command="load" ns="darknet_ros" file="$(arg network_param_file)"/>
+    -->
+
+    <node pkg="darknet_ros_eb" type="darknet_ros_eb" name="jetson1_segmentor" output="screen" launch-prefix="$(arg launch_prefix)" machine="jetson1">
+        <param name="weights_path"          value="/darknet_ros_eb/darknet_ros/yolo_network_config/weights" />
+        <param name="config_path"           value="/darknet_ros_eb/darknet_ros/yolo_network_config/cfg" />
+        <param name="image_input" 			value="/jetson3/qhd/image_color"/>
+        <param name="bb_pub" 			    value="/jetson3/eb/bounding_box"/>
+        <param name="detectedImage_pub" 	value="/jetson3/eb/detected_image"/>
+    </node>
+
 
     <!-- Jetson 2 -->
-    <include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
+    <!--<include file="$(find darknet_ros_eb)/launch/jetson_segmentor.launch">
         <arg name="image_input"  value="/jetson3/qhd/image_color"/>
         <arg name="bb_pub"  value="/jetson3/eb/bounding_box"/>
         <arg name="detectedImage_pub"  value="/jetson3/eb/detected_image"/>
         <arg name="machine_name"  value="jetson3"/>
 
-    </include>
-
+    </include>-->
 
 </launch>
