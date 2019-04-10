@@ -3,7 +3,7 @@
 <launch>
 
     <machine name="jetson1" address="localhost" />
-    <!--<machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>-->
+    <machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <!--<machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <machine name="jetson3" address="jetson3.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <machine name="jetson4" address="jetson4.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
@@ -40,12 +40,12 @@
         <param name="detectedImage_pub" 	value="/jetson2/eb/detected_image"/>
     </node>
     -->
-    <!--
+
     <node pkg="wp3_compressor" type="wp3_compressor_node" name="jetson1_compressor_testing_eb" machine="jetson2">
         <param name="sensor_name" value="jetson1" />
         <param name="resolution" value="0.04" />
     </node>
-    -->
+
 
 
 </launch>
