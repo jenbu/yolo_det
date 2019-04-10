@@ -3,7 +3,7 @@
 <launch>
 
     <machine name="jetson1" address="localhost" />
-    <machine name="jetson2" address="10.225.120.102" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
+    <machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <!--<machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <machine name="jetson3" address="jetson3.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
     <machine name="jetson4" address="jetson4.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>
