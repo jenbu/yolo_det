@@ -4,7 +4,7 @@
 	<!--<machine name="jetson1" address="jetson1.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false" />
 	<machine name="jetson2" address="jetson2.wp3.localnet" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false"/>-->
 	<machine name="jetson3" address="localhost" />
-	<machine name="jetson4" address="10.225.120.104" env-loader="/home/nvidia/catkin_ws/devel/env.sh" user="nvidia" password="nvidia" default="false" />
+
 
 	<arg name="launch_prefix" default=""/>
 
@@ -23,12 +23,5 @@
 		<param name="detectedImage_pub" 	value="/local3/detection_image"/>
 	</node>
 
-	<node pkg="darknet_ros_eb" type="darknet_ros_eb" name="jetson4_eb_detector" output="screen" launch-prefix="$(arg launch_prefix)" machine="jetson4">
-		<param name="weights_path"          value="$(arg yolo_weights_path)" />
-		<param name="config_path"           value="$(arg yolo_config_path)" />
-		<param name="image_input" 			value="/jetson4/qhd/image_color"/>
-		<param name="bb_pub" 			    value="/local4/bounding_boxes"/>
-		<param name="detectedImage_pub" 	value="/local4/detection_image"/>
-	</node>
 
 </launch>
