@@ -41,10 +41,6 @@
     </node>
     -->
 
-    <node pkg="wp3_compressor" type="wp3_compressor_node" name="jetson1_compressor_testing_eb" machine="jetson2">
-        <param name="sensor_name" value="jetson1" />
-        <param name="resolution" value="0.04" />
-    </node>
 
 
 
